@@ -23,7 +23,11 @@ Bundle 'VundleVim/Vundle.vim'
 Bundle 'scrooloose/nerdtree'
 
 " ctrl + p to open files
-" Plugin 'git@github.com:ctrlpvim/ctrlp.vim.git'
+Plugin 'ctrlpvim/ctrlp.vim'
+
+" youcompleteme
+Plugin 'Valloric/YouCompleteMe'
+
 call vundle#end()
 filetype plugin indent on
 

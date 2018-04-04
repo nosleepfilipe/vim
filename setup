@@ -18,4 +18,8 @@ SHELL=bash
 
 vim +PluginInstall +qall
 
+# install youcompleteme
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --all
+
 unset VIMDIR
