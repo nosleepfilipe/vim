@@ -1,17 +1,21 @@
 #!/usr/bin/env bash
 VIMDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# Symlink
-ln -s $VIMDIR/vimrc $HOME/.vimrc
-ln -s $VIMDIR/gvimrc $HOME/.gvimrc
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+rm -rf bundle/
 
-# Create directories
-mkdir -p $VIMDIR/{tmp,view,backup,session}
+# Remove existing SymLink
+rm $HOME/.vimrc
+
+# Add new Symlink
+ln -s $VIMDIR/vimrc $HOME/.vimrc
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Download Vundle
 git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 SHELL=bash
+
+vim +PluginInstall +qall
 
 unset VIMDIR

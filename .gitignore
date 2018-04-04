@@ -1,1 +1,7 @@
 .DS_Store
+backup/
+session/
+tmp/
+view/
+bundle/
+.setup.swp
