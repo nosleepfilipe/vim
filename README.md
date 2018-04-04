@@ -26,10 +26,7 @@ cd ~/.vim
   - [Raimondi/delimitMate](https://github.com/Raimondi/delimitMate)
   - [terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
   - [mileszs/ack.vim](https://github.com/mileszs/ack.vim)
-
-
-
-
+  - [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter)
 
 
 

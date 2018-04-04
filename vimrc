@@ -7,6 +7,9 @@ set backspace=indent,eol,start
 set nocompatible " be iMproved, required
 filetype off " required
 
+" The comma is way easier to reach than the backslash, the default <leader>
+let mapleader=','
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -27,7 +30,7 @@ Plugin 'Valloric/YouCompleteMe'
 " coffeescript
 Plugin 'kchmck/vim-coffee-script'
 
-
+Plugin 'scrooloose/nerdcommenter'
 " gitgutter
 Plugin 'airblade/vim-gitgutter'
 
@@ -51,6 +54,11 @@ map ff :NERDTreeFocus<CR>
 let g:NERDTreeWinSize=30
 " set nerd tree to show hidden files
 let NERDTreeShowHidden=1
+
+" NERDCommenter
+let NERDSpaceDelims=1 "number of spaces to add before comments
+map <c-c> <plug>NERDCommenterToggle<cr>
+imap <c-c> <esc><plug>NERDCommenterToggle<cr>a
 
 " default theme
 let g:airline_theme='deus'
