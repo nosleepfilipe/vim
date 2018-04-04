@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+VIMDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Symlink
+ln -s $VIMDIR/vimrc $HOME/.vimrc
+ln -s $VIMDIR/gvimrc $HOME/.gvimrc
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Create directories
+mkdir -p $VIMDIR/{tmp,view,backup,session}
+
+# Download Vundle
+git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+SHELL=bash
+
+unset VIMDIR
