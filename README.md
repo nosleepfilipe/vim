@@ -27,7 +27,36 @@ cd ~/.vim
   - [terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
   - [mileszs/ack.vim](https://github.com/mileszs/ack.vim)
   - [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter)
+  - [SirVer/ultisnips](https://github.com/SirVer/ultisnips)
+  - [honza/vim-snippets/](https://github.com/honza/vim-snippets/)
 
 
 
 
+
+
+
+
+
+#### To comment out blocks in vim:
+press Esc (to leave editing or other mode)
+
+hit ctrl+v (visual block mode)
+
+use the up/down arrow keys to select lines you want
+
+Shift+i (capital I)
+
+insert the text you want, i.e. %
+
+press Esc Esc
+
+
+#### To uncomment blocks in vim:
+press Esc (to leave editing or other mode)
+
+hit ctrl+v (visual block mode)
+
+use the ↑/↓ arrow keys to select the lines to uncomment.
+
+press d or x to delete characters, repeatedly if necessary

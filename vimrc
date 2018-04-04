@@ -44,7 +44,8 @@ Plugin 'terryma/vim-multiple-cursors'
 
 Plugin 'mileszs/ack.vim'
 
-
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 call vundle#end()
 filetype plugin indent on
@@ -68,6 +69,13 @@ set number
 set nowrap
 syntax on
 
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-f>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 
 set directory=~/.vim/tmp "where to put swap files
 set backupdir=~/.vim/backup "where to put backups
@@ -82,8 +90,11 @@ set clipboard+=unnamed "yanks and pastes use the clipboard instead
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+set expandtab "expandtab for spaces, noexpandtab for tabs
+set smarttab
 set autoindent
 set smartindent
+set shiftround
 
 
 colorscheme roshambo
