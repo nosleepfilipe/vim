@@ -76,6 +76,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+" Window management
+set splitbelow "open new horizontal splits below the current
+set splitright "open new veritcal splits to the right of the current
 
 " Tab completion and find files
 set wildmode=list:longest,list:full
