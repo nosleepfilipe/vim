@@ -77,6 +77,15 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
 
+" Tab completion and find files
+set wildmode=list:longest,list:full
+set wildignore+=.DS_Store,*.pyc,*.scssc,COMMIT_EDITMSG
+set wildignore+=*/.git/*,*/node_modules/*
+set wildignore+=*/tmp/*
+set wildignore+=*/vendor/*
+set wildignore+=sass-cache/*,.sass-cache/*,*.scssc
+set infercase "ignore case on insert completion
+
 set directory=~/.vim/tmp "where to put swap files
 set backupdir=~/.vim/backup "where to put backups
 set viewdir=~/.vim/view
