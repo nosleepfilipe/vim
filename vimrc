@@ -76,6 +76,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " Window management
 set splitbelow "open new horizontal splits below the current
 set splitright "open new veritcal splits to the right of the current
@@ -108,5 +110,6 @@ set autoindent
 set smartindent
 set shiftround
 
-
+" access to files in buffer
+map <leader>b :CtrlPBuffer<CR>
 colorscheme roshambo
