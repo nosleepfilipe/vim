@@ -51,7 +51,7 @@ call vundle#end()
 filetype plugin indent on
 
 " map ff to focus nerdTree
-map ff :NERDTreeFocus<CR>
+map ff :NERDTreeFind<CR>
 let g:NERDTreeWinSize=30
 " set nerd tree to show hidden files
 let NERDTreeShowHidden=1
