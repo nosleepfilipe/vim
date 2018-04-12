@@ -50,6 +50,8 @@ Plugin 'honza/vim-snippets'
 call vundle#end()
 filetype plugin indent on
 
+" NERDTree
+map <Leader>n :NERDTreeToggle<CR>
 " map ff to focus nerdTree
 map ff :NERDTreeFind<CR>
 let g:NERDTreeWinSize=30
@@ -85,6 +87,13 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+
+" Vim 7.3 and newer can persist undo history across sessions
+if v:version >= 703
+  set undofile
+  set undodir=~/.vim/tmp
+endif
 
 " Window management
 set splitbelow "open new horizontal splits below the current
