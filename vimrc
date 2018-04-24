@@ -39,6 +39,7 @@ Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'Raimondi/delimitMate'
 
+Plugin 'junegunn/vim-easy-align'
 
 Plugin 'terryma/vim-multiple-cursors'
 
@@ -72,6 +73,13 @@ set nowrap
 syntax on
 
 
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+
 " Enable the mouse in terminal Vim (if supported)
 set mouse+=a
 if &term =~ '^screen'
@@ -88,6 +96,14 @@ let g:UltiSnipsEditSplit="vertical"
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
+
+" Visual Mode Blockwise Indent
+" This keeps the current visual block selection active after changing indent
+" with '<' or '>'. Usually the visual block selection is lost after you shift
+" it, which is incredibly annoying.
+" http://vim.wikia.com/wiki/Short_mappings_for_common_tasks
+vmap > >gv
+vmap < <gv
 
 " Vim 7.3 and newer can persist undo history across sessions
 if v:version >= 703
@@ -115,7 +131,7 @@ set autoread "re-read files when they're changed externally
 
 set showmatch "show matching brackets
 
-set clipboard+=unnamed "yanks and pastes use the clipboard instead
+set clipboard=unnamed "yanks and pastes use the clipboard instead
 
 " Tabs and spacing
 set tabstop=2

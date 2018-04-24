@@ -28,4 +28,5 @@ cd ~/.vim
   - [mileszs/ack.vim](https://github.com/mileszs/ack.vim)
   - [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter)
   - [SirVer/ultisnips](https://github.com/SirVer/ultisnips)
-  - [honza/vim-snippets/](https://github.com/honza/vim-snippets/)
+  - [honza/vim-snippets](https://github.com/honza/vim-snippets/)
+  - [junegunn/vim-easy-align](https://github.com/junegunn/vim-easy-align)
