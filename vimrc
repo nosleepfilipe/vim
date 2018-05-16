@@ -170,3 +170,4 @@ set shiftround
 " access to files in buffer
 map <leader>b :CtrlPBuffer<CR>
 colorscheme roshambo
+set guifont=Monaco:h20
