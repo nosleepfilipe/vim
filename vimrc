@@ -47,6 +47,8 @@ Plugin 'mileszs/ack.vim'
 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+" copy path
+Plugin 'mortonfox/nerdtree-clip'
 
 call vundle#end()
 filetype plugin indent on
@@ -55,10 +57,11 @@ filetype plugin indent on
 map <Leader>n :NERDTreeToggle<CR>
 " map ff to focus nerdTree
 map ff :NERDTreeFind<CR>
-let g:NERDTreeWinSize=30
+let g:NERDTreeWinSize=80
 " set nerd tree to show hidden files
 let NERDTreeShowHidden=1
-
+" auto hide nerdtree after open file
+let NERDTreeQuitOnOpen=1
 " NERDCommenter
 let NERDSpaceDelims=1 "number of spaces to add before comments
 map <c-c> <plug>NERDCommenterToggle<cr>
@@ -89,33 +92,35 @@ endif
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 " with this config you need to press ctrl+f to choose the snippet
-" let g:UltiSnipsExpandTrigger="<c-f>"
-" let g:UltiSnipsJumpForwardTrigger="<c-b>"
-" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger="<c-f>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
-" let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsEditSplit="vertical"
 
 " with this config you just press tab to choose snippet
 " and you use the keyboard cursors to go to the next option
 " YCM + Snippets
 "UltiSnips"{
-function! g:UltiSnips_Complete()
-    call UltiSnips#ExpandSnippet()
-    if g:ulti_expand_res == 0
-        if pumvisible()
-            return "\<c-n>"
-        else
-            call UltiSnips#JumpForwards()
-            if g:ulti_jump_forwards_res == 0
-               return "\<tab>"
-            endif
-        endif
-    endif
-    return ""
-endfunction
-autocmd BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <c-r>=g:UltiSnips_Complete()<cr>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsListSnippets="<c-e>"
+
+"comment
+" function! g:UltiSnips_Complete()
+    " call UltiSnips#ExpandSnippet()
+    " if g:ulti_expand_res == 0
+        " if pumvisible()
+            " return "\<c-n>"
+        " else
+            " call UltiSnips#JumpForwards()
+            " if g:ulti_jump_forwards_res == 0
+               " return "\<tab>"
+            " endif
+        " endif
+    " endif
+    " return ""
+" endfunction
+" autocmd BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <c-r>=g:UltiSnips_Complete()<cr>"
+" let g:UltiSnipsJumpForwardTrigger="<tab>"
+" let g:UltiSnipsListSnippets="<c-e>"
 
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
