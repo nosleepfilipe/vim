@@ -31,3 +31,4 @@ cd ~/.vim
   - [honza/vim-snippets](https://github.com/honza/vim-snippets/)
   - [junegunn/vim-easy-align](https://github.com/junegunn/vim-easy-align)
   - [nerdtree-clip](https://github.com/mortonfox/nerdtree-clip)
+  - [vim-jsx](https://github.com/mxw/vim-jsx)

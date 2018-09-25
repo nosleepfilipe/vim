@@ -50,6 +50,10 @@ Plugin 'honza/vim-snippets'
 " copy path
 Plugin 'mortonfox/nerdtree-clip'
 
+" jsx
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+
 call vundle#end()
 filetype plugin indent on
 
