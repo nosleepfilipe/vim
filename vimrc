@@ -65,6 +65,7 @@ let g:NERDTreeWinSize=80
 " set nerd tree to show hidden files
 let NERDTreeShowHidden=1
 " auto hide nerdtree after open file
+" auto close when open a file
 let NERDTreeQuitOnOpen=1
 " NERDCommenter
 let NERDSpaceDelims=1 "number of spaces to add before comments
@@ -163,6 +164,11 @@ set viewdir=~/.vim/view
 set autoread "re-read files when they're changed externally
 
 set showmatch "show matching brackets
+
+" show special characters 
+" set listchars=nbsp:☠,tab:▸␣
+set listchars=tab:\▸\ ,trail:·,eol:¶
+map <Leader>i :set invlist<CR>:exe ":echo 'toggling invisibles'"<CR>
 
 set clipboard=unnamed "yanks and pastes use the clipboard instead
 
