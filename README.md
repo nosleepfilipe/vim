@@ -32,3 +32,7 @@ cd ~/.vim
   - [junegunn/vim-easy-align](https://github.com/junegunn/vim-easy-align)
   - [nerdtree-clip](https://github.com/mortonfox/nerdtree-clip)
   - [vim-jsx](https://github.com/mxw/vim-jsx)
+  - [rainbow](https://github.com/luochen1990/rainbow)
+  - [tabnine-vim](https://github.com/zxqfl/tabnine-vim)
+  - [vim-clojure-static](https://github.com/guns/vim-clojure-static)
+  - [vim-fireplace](https://github.com/tpope/vim-fireplace)

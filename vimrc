@@ -56,9 +56,18 @@ Plugin 'mxw/vim-jsx'
 
 Plugin 'tpope/vim-fugitive'
 
+Plugin 'luochen1990/rainbow'
+
+" machine learning
+Plugin 'zxqfl/tabnine-vim'
+
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
+
 call vundle#end()
 filetype plugin indent on
 
+let g:rainbow_active = 1
 " NERDTree
 map <Leader>n :NERDTreeToggle<CR>
 " map ff to focus nerdTree
@@ -82,6 +91,10 @@ set number
 set nowrap
 syntax on
 
+" augroup fugitive_status
+  " autocmd!
+  " autocmd user Fugitive set statusline=%<\ %f\ %{fugitive#statusline()} ...
+" augroup END
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
