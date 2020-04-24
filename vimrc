@@ -64,6 +64,8 @@ Plugin 'zxqfl/tabnine-vim'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
 
+Plugin 'typescript-vim'
+
 call vundle#end()
 filetype plugin indent on
 

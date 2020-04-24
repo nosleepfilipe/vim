@@ -36,3 +36,5 @@ cd ~/.vim
   - [tabnine-vim](https://github.com/zxqfl/tabnine-vim)
   - [vim-clojure-static](https://github.com/guns/vim-clojure-static)
   - [vim-fireplace](https://github.com/tpope/vim-fireplace)
+  - [typescript-vim](https://github.com/leafgarland/typescript-vim)
+
